@@ -5,7 +5,7 @@ WORKDIR /app
 # Install pnpm globally
 RUN npm install -g pnpm
 
-COPY package.json pnpm-lock.yaml .npmrc next.config.js ./
+COPY package.json pnpm-lock.yaml next.config.js ./
 
 RUN pnpm install --production
 
